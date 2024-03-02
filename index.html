@@ -1,20 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>retro forum</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
 
-  </header>
-  <main>
+<body class="font-mulish">
+    <header class="container mx-auto mt-8 ">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="navbar-end gap-8">
+                <div class="lg:tooltip" data-tip="Home">
+                    <a class="btn rounded-full"> <img src="images/home.png" alt=""></a>
+                </div>
+                <div class="lg:tooltip" data-tip="Edit">
+                    <a class="btn rounded-full"> <img src="images/edit.png" alt=""></a>
+                </div>
+                <div class="lg:tooltip" data-tip="Add">
+                    <a class="btn rounded-full"> <img src="images/add.png" alt=""></a>
+                </div>
+                <div class="lg:tooltip" data-tip="Flag">
+                    <a class="btn rounded-full"> <img src="images/flag.png" alt=""></a>
+                </div>
+                <a class="btn rounded-full bg-[#797DFC] text-white text-xl font-extrabold px-10">Sign In</a>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto">
+        <section class="mt-10">
+            <div class="h-[555px] bg-[#12132D] rounded-3xl">
+                <div class="flex justify-between p-28">
+                    <div>
+                        <h1 class="text-7xl font-black text-white p-4">Welcome to the <br> <span
+                                class="text-sky-600">ReTro</span> Forum</h1>
+                        <p class="text-2xl text-white p-5 mb-4">Share your favorite opinion and win and wp forum coffee
+                            mug!</p>
+                        <label class="input input-bordered flex items-center rounded-full">
+                            <input type="text" class="grow" placeholder="Search" />
+                            <span
+                                class="btn rounded-full bg-[#797DFC] text-white text-xl font-extrabold px-10">Search</span>
+                        </label>
+                    </div>
+                    <div>
+                        <div class="bg-white rounded-3xl mt-12">
+                            <div class="flex justify-between gap-10 p-14">
+                                <div>
+                                    <p class="text-2xl font-semibold text-black">Registered Users</p>
+                                    <p class="text-2xl font-semibold text-black">Forum</p>
+                                    <p class="text-2xl font-semibold text-black">Topics</p>
+                                    <p class="text-2xl font-semibold text-black">Replies</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-semibold text-black">01</p>
+                                    <p class="text-2xl font-semibold text-black">05</p>
+                                    <p class="text-2xl font-semibold text-black">01</p>
+                                    <p class="text-2xl font-semibold text-black">01</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto">
+            <div class="text-center mt-16">
+                <h1 class="text-5xl font-bold mb-8">Let’s Discuss</h1>
+                <p class="text-xl mb-20">Yes, you can run unit tests and view the results directly within the app. <br>
+                    The integrated testing
+                    features allow for a streamlined .</p>
+            </div>
+            <div class="flex justify-between">
+                <div>
+                    <div class="flex items-center gap-10 border-2 p-6 rounded-lg w-[960px]">
+                        <div class="indicator">
+                            <span class="indicator-item badge badge-secondary"></span>
+                            <div class="grid w-20 h-20 bg-base-300 place-items-center"><img src="images/home.png"
+                                    alt=""></div>
+                        </div>
+                        <div>
+                            <div class="flex gap-16 mb-4">
+                                <p class="font-bold"># Music</p>
+                                <p class="font-bold">Author : Awlad Hossain</p>
+                            </div>
+                            <h2 class="text-2xl font-bold mb-4">10 Kids Unaware of Their Halloween Costume</h2>
+                            <p>It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s
+                                your prerogative Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nam?
+                                Officiis, consequatur sapiente? Itaque quidem, eveniet laborum officiis harum dolore
+                                aut, quisquam fugit quae animi quaerat ullam totam ea perferendis.</p>
+                            <hr class="m-4">
+                            <div class="flex justify-between">
+                                <div class="mt-4 flex justify-start gap-4 lg:gap-8">
+                                    <div class="flex gap-2">
+                                        <img src="images/Group 13.png" alt="">560
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <img src="images/Group 16.png" alt="">1,568
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <img src="images/Group 18.png" alt="">5 min
+                                    </div>
+                                </div>
+                                <button><img src="images/Group 40106.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-gray-100 rounded-3xl p-4">
+                        <div class="flex justify-between gap-10">
+                            <div>
+                                <h1 class="text-2xl font-bold">Title</h1>
+                            </div>
+                            <div>
+                                <p class="">Mark as read</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-3xl mt-12 w-[480px]">
+                            <div class="flex justify-between gap-10 p-8">
+                                <div>10 Kids Unaware of Their Halloween Costume</div>
+                                <div>
+                                    <img src="images/Group 16.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
 
-  </main>
-  <footer>
-
-  </footer>
-  <script src="script/retro.js"></script>
+    </footer>
+    <script src="script/retro.js"></script>
 </body>
+
 </html>

@@ -17,17 +17,21 @@
                 <img src="images/logo.png" alt="">
             </div>
             <div class="navbar-end gap-8">
-                <div class="lg:tooltip" data-tip="Home">
-                    <a class="btn rounded-full"> <img src="images/home.png" alt=""></a>
+                <div class="tooltip-container">
+                    <button class="btn rounded-full"> <img src="images/home.png" alt=""></button>
+                    <span class="tooltip-text">Home</span>
                 </div>
-                <div class="lg:tooltip" data-tip="Edit">
-                    <a class="btn rounded-full"> <img src="images/edit.png" alt=""></a>
+                <div class="tooltip-container">
+                    <button class="btn rounded-full"> <img src="images/edit.png" alt=""></button>
+                    <span class="tooltip-text">Edit</span>
                 </div>
-                <div class="lg:tooltip" data-tip="Add">
-                    <a class="btn rounded-full"> <img src="images/add.png" alt=""></a>
+                <div class="tooltip-container">
+                    <button class="btn rounded-full"> <img src="images/add.png" alt=""></button>
+                    <span class="tooltip-text">Add</span>
                 </div>
-                <div class="lg:tooltip" data-tip="Flag">
-                    <a class="btn rounded-full"> <img src="images/flag.png" alt=""></a>
+                <div class="tooltip-container">
+                    <button class="btn rounded-full"> <img src="images/flag.png" alt=""></button>
+                    <span class="tooltip-text">Flag</span>
                 </div>
                 <a class="btn rounded-full bg-[#797DFC] text-white text-xl font-extrabold px-10">Sign In</a>
             </div>
@@ -90,7 +94,7 @@
                             <p class="">Mark as read</p>
                         </div>
                     </div>
-                    <div class="bg-white rounded-3xl mt-12 w-[480px]">
+                    <div id="postDetails" class="bg-white rounded-3xl mt-12 w-[480px]">
                         <div class="flex justify-between gap-10 p-8">
                             <div class="font-bold">10 Kids Unaware of Their Halloween Costume</div>
                             <div>

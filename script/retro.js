@@ -59,11 +59,6 @@ const handleSearch = () =>{
 }
 
 
-
-
-
-
-
 const latestPost = async()=> {
     const res = await fetch ("https://openapi.programming-hero.com/api/retro-forum/latest-posts");
     const data = await res.json();
@@ -100,10 +95,6 @@ const displayPosts2 = posts =>{
         postContainer2.appendChild(postCard2);
     })
 }
-
-
-
-
 latestPost();
 
 allPost();

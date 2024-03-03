@@ -2,6 +2,7 @@ const allPost = async()=> {
     const res = await fetch ("https://openapi.programming-hero.com/api/retro-forum/posts");
     const data = await res.json();
     const posts = data.posts;
+   
     displayPosts(posts);
 }
 
@@ -21,11 +22,10 @@ const displayPosts = posts =>{
         <div>
             <div class="flex gap-16 mb-4">
                 <p class="font-bold">#${post.category} </p>
-                <p class="font-bold">Author : ${post.name}</p>
+                <p class="font-bold">Author : ${post.author.name}</p>
             </div>
-            <h2 class="text-2xl font-bold mb-4">${post.description}</h2>
-            <p>It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s
-                your prerogative. </p>
+            <h2 class="text-2xl font-bold mb-4">${post.title}</h2>
+            <p>${post.description}  It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s your prerogative .</p>
             <hr class="m-4">
             <div class="flex justify-between">
                 <div class="mt-4 flex justify-start gap-4 lg:gap-8">
@@ -45,6 +45,65 @@ const displayPosts = posts =>{
         `;
         postContainer.appendChild(postCard);
     })
+    
 }
+
+const handleSearch = () =>{
+   const searchField = document.getElementById('search-field').value;
+
+   if (searchField){
+    allPost(searchField)
+   }else{
+    alert("please valid text")
+   }
+}
+
+
+
+
+
+
+
+const latestPost = async()=> {
+    const res = await fetch ("https://openapi.programming-hero.com/api/retro-forum/latest-posts");
+    const data = await res.json();
+    const posts = data;
+   
+    displayPosts2(posts);
+}
+const postContainer2 = document.getElementById('post-container2');
+
+const displayPosts2 = posts =>{
+    posts.forEach(post =>{
+        console.log(post);
+        const postCard2 = document.createElement('div');
+        postCard2.classList = `items-center gap-10 border-2 p-6 rounded-lg `
+        postCard2.innerHTML= `
+        <img class="rounded-lg" src="${post.cover_image}" alt="">
+        <div class="flex gap-4 mt-4">
+            <img src="images/Frame (5).png" alt="">
+            <p>${post.author.posted_date}</p>
+        </div>
+        <h1 class="text-xl font-bold mt-4">${post.title}
+        </h1>
+        <p class="mt-4">${post.description}</p>
+        <div class="flex mt-4 gap-6">
+            <div class="mt-2">
+                <img class="h-10 w-10 rounded-full" src="${post.profile_image}" alt="">
+            </div>
+            <div>
+                <p class="font-bold">${post.author.name}</p>
+                <p>${post.author.designation}</p>
+            </div>
+        </div>
+        `;
+        postContainer2.appendChild(postCard2);
+    })
+}
+
+
+
+
+latestPost();
 
 allPost();

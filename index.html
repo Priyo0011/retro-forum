@@ -32,6 +32,7 @@
                 <a class="btn rounded-full bg-[#797DFC] text-white text-xl font-extrabold px-10">Sign In</a>
             </div>
         </div>
+        <div></div>
     </header>
     <main class="container mx-auto">
         <section class="mt-10">
@@ -43,9 +44,9 @@
                         <p class="text-2xl text-white p-5 mb-4">Share your favorite opinion and win and wp forum coffee
                             mug!</p>
                         <label class="input input-bordered flex items-center rounded-full">
-                            <input type="text" class="grow" placeholder="Search" />
+                            <input id="search-field" type="text" class="grow" placeholder="Search" />
                             <span
-                                class="btn rounded-full bg-[#797DFC] text-white text-xl font-extrabold px-10">Search</span>
+                                onclick="handleSearch()" class="btn rounded-full bg-[#797DFC] text-white text-xl font-extrabold px-10">Search</span>
                         </label>
                     </div>
                     <div>
@@ -126,63 +127,9 @@
                     The integrated testing
                     features allow for a streamlined .</p>
             </div>
-            <div class="grid grid-cols-3 gap-12">
-                <div class="items-center gap-10 border-2 p-6 rounded-lg">
-                    <img class="bg-gray-200 rounded-lg h-48" src="" alt="">
-                    <div class="flex gap-4 mt-4">
-                        <img src="images/Frame (5).png" alt="">
-                        <p>29 January 2024</p>
-                    </div>
-                    <h1 class="text-xl font-bold mt-4">What will a mars habitat force that impact in our daily life!!!
-                    </h1>
-                    <p class="mt-4">Yes, you can run unit tests and view the results directly within the app. </p>
-                    <div class="flex mt-4 gap-6">
-                        <div class="mt-2">
-                            <img class="h-10 w-10 rounded-full" src="images/flag.png" alt="">
-                        </div>
-                        <div>
-                            <p>Cameron Williamson</p>
-                            <p>Unknown</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="items-center gap-10 border-2 p-6 rounded-lg">
-                    <img class="bg-gray-200 rounded-lg h-48" src="" alt="">
-                    <div class="flex gap-4 mt-4">
-                        <img src="images/Frame (5).png" alt="">
-                        <p>29 January 2024</p>
-                    </div>
-                    <h1 class="text-xl font-bold mt-4">What will a mars habitat force that impact in our daily life!!!
-                    </h1>
-                    <p class="mt-4">Yes, you can run unit tests and view the results directly within the app. </p>
-                    <div class="flex mt-4 gap-6">
-                        <div class="mt-2">
-                            <img class="h-10 w-10 rounded-full" src="images/flag.png" alt="">
-                        </div>
-                        <div>
-                            <p>Cameron Williamson</p>
-                            <p>Unknown</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="items-center gap-10 border-2 p-6 rounded-lg">
-                    <img class="bg-gray-200 rounded-lg h-48" src="" alt="">
-                    <div class="flex gap-4 mt-4">
-                        <img src="images/Frame (5).png" alt="">
-                        <p>29 January 2024</p>
-                    </div>
-                    <h1 class="text-xl font-bold mt-4">What will a mars habitat force that impact in our daily life!!!
-                    </h1>
-                    <p class="mt-4">Yes, you can run unit tests and view the results directly within the app. </p>
-                    <div class="flex mt-4 gap-6">
-                        <div class="mt-2">
-                            <img class="h-10 w-10 rounded-full" src="images/flag.png" alt="">
-                        </div>
-                        <div>
-                            <p>Cameron Williamson</p>
-                            <p>Unknown</p>
-                        </div>
-                    </div>
+            <div >
+                <div id="post-container2" class="grid grid-cols-3 gap-8">
+                    
                 </div>
             </div>
         </section>

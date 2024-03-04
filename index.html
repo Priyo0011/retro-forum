@@ -49,8 +49,8 @@
                             mug!</p>
                         <label class="input input-bordered flex items-center rounded-full">
                             <input id="search-field" type="text" class="grow" placeholder="Search" />
-                            <span
-                                onclick="handleSearch()" class="btn rounded-full bg-[#797DFC] text-white text-xl font-extrabold px-10">Search</span>
+                            <span onclick="handleSearch()"
+                                class="btn rounded-full bg-[#797DFC] text-white text-xl font-extrabold px-10">Search</span>
                         </label>
                     </div>
                     <div>
@@ -81,31 +81,30 @@
                     The integrated testing
                     features allow for a streamlined .</p>
             </div>
-           <div class="flex justify-between">
-            <div id="post-container">
+            <div id="loading-spinner" class="text-center my-32 hidden">
+                <span class="loading loading-dots loading-lg"></span>
             </div>
-            <div>
-                <div class="bg-gray-100 rounded-3xl p-4 ">
-                    <div class="flex justify-between gap-10">
-                        <div>
-                            <h1 class="text-2xl font-bold">Title</h1>
-                        </div>
-                        <div>
-                            <p class="">Mark as read</p>
-                        </div>
-                    </div>
-                    <div id="postDetails" class="bg-white rounded-3xl mt-12 w-[480px]">
-                        <div class="flex justify-between gap-10 p-8">
-                            <div class="font-bold">10 Kids Unaware of Their Halloween Costume</div>
+            <div class="flex justify-between">
+                <div id="post-container">
+                </div>
+                <div>
+                    <div class="bg-gray-100 rounded-3xl p-4 ">
+                        <div class="flex justify-between gap-10">
                             <div>
-                                <img src="images/Group 16.png" alt="">
+                                <h1 class="text-2xl font-bold">Title</h1>
                             </div>
-                            <div>0</div>
+                            <div class="flex gap-2">
+                                <div><img src="images/Frame (6).png" alt=""></div>
+                                <p>Mark asread</p>
+                                <p id="readCount">(0)</p>
+                            </div>
+                        </div>
+                        <div id="postDetails" class="bg-white rounded-3xl mt-12 w-[480px]">
+
                         </div>
                     </div>
                 </div>
             </div>
-           </div>
         </section>
         <section class="mt-20">
             <div class="bg-[#12132D] rounded-3xl">
@@ -131,9 +130,9 @@
                     The integrated testing
                     features allow for a streamlined .</p>
             </div>
-            <div >
+            <div>
                 <div id="post-container2" class="grid grid-cols-3 gap-8">
-                    
+
                 </div>
             </div>
         </section>
